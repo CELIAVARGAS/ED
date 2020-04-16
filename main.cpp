@@ -17,10 +17,41 @@ using namespace std;
  */
 //Definimos nuestros metodos
 
+void subMenuReportes() {
+    int opcion = 0;
+    cout << "\n\t********** SUBMENU ********** ";
+    cout << "\n\t1. Cantidad de columnas y tablas ";
+    cout << "\n\t2. Cantidad de filas de un mismo tipo en una tabla ";
+    cout << "\n\t3. Cantidad de datos totales ";
+    cout << "\n\t4. Archivo ";
+    cout << "\n\t5. Regresar a Menu \n";
+    cin >> opcion;
+
+    switch (opcion) {
+        case 1:
+            cantidadDeFilasDeMismoTipoTabla(1);
+            break;
+        case 2:
+            cantidadDeFilasDeMismoTipoTabla(2);
+            break;
+        case 3:
+            cantidadDeFilasDeMismoTipoTabla(3);
+            break;
+        case 4:
+            archivo();
+            break;
+        case 5:
+            break;
+        default:
+            break;
+    }
+
+}
+
 void MENU() {
     int opcion = 0;
 
-    cout << "\n\t********** MENU ********** ";
+    cout << "\n\n\t********** MENU ********** ";
     cout << "\n1. Crear Tabla ";
     cout << "\n2. Insertar Dato en Tabla ";
     cout << "\n3. Select Dato ";
@@ -32,12 +63,10 @@ void MENU() {
     switch (opcion) {
         case 1:
             analisisCrearTabla();
-            imprimirTablas();
             MENU();
             break;
         case 2:
             analisisInsertarDatos();
-           // imprimir2();
             MENU();
             break;
         case 3:
@@ -45,13 +74,13 @@ void MENU() {
             MENU();
             break;
         case 4:
+            subMenuReportes();
             MENU();
             break;
         case 5:
             MENU();
             break;
         case 6:
-            //   borrar();
             exit(0);
             break;
         default:
@@ -61,8 +90,6 @@ void MENU() {
 }
 
 int main(int argc, char** argv) {
-
-    //MENU 
     MENU();
     return 0;
 }

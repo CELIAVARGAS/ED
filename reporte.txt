@@ -1,0 +1,38 @@
+
+ ********** REPORTE DE TODAS LAS TABLAS **********
+
+	 ***** T1 *****
+C1
+-HOLA
+-NULL
+-NULL
+-NULL
+-NULL
+-NULL
+-NULL
+-NULL
+-NULL
+-NULL
+C2
+-100
+-NULL
+-NULL
+-NULL
+-NULL
+-NULL
+-NULL
+-NULL
+-NULL
+-NULL
+
+ Cantidad de columnas 2
+
+	 Cantidad de datos String 1
+
+	 Cantidad de datos Int 1
+
+	 Cantidad de datos Char() 0
+
+	 Cantidad de datos Double 0
+
+ Cantidad de tablas 1
